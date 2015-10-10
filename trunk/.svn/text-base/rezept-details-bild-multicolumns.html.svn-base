@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+    
+<body>
+
+<div id="rezeptDetailBild" data-role="page" >
+
+	<div data-role="header">
+        <a href="index.html" data-icon="home" class="ui-btn-right" >Home</a>
+		<h1>Rezept</h1>
+        
+	</div>
+
+  <div data-role="content"> 
+
+       <h3 class="titelRezept" ></h3>
+       <div><img class="bildRezept" style="max-width:50%;text-align:center" /></div>
+       <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <ul data-role="listview" class="mylist" id="actionListRezeptLinks">
+                </ul>
+            </div>
+            <div class="ui-block-b">
+                 <ul data-role="listview" class="mylist" id="actionListRezeptRechts">
+                 </ul>    
+            </div>
+        </div>   
+	 
+
+  </div>
+   
+   <div data-role="footer" data-position="fixed">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#" data-transition="slidedown" class="linkBild" >Bild</a></li>
+          <li><a href="#" data-transition="slideup" class="linkZutat" >Zutaten</a></li>
+          <li><a href="#" data-transition="slideup" class="linkAnleitung" >Anleitung</a></li>
+        </ul>
+        
+      </div><!-- Ende navbar -->
+   </div><!-- Ende footer -->
+</div><!-- /page two -->
+
+</body>
+
+</html>
