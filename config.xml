@@ -8,7 +8,6 @@
 		versionCode = "10" >
 
     <name>rezepte</name>
-
     <description>beas rezepte</description>
 
     <author href="http://webwork-oberland.de" email="mail@bealisa.com">Webwork-Oberland</author>
