@@ -80,8 +80,8 @@
 	<plugin name="InAppBrowser" value="CDVInAppBrowser" />
 	<plugin name="InAppBrowser" />
 
-    <icon src="icons/brainmobile-ios-114.png" gap:platform="ios" width="114" height="114"/>
-    <icon src="icons/brainmobile-ios-144.png" gap:platform="ios" width="144" height="144"/>
+    <icon src="icons/ios/Icon-72@2x.png" gap:platform="ios" width="114" height="114"/>
+    <icon src="icons/ios/Icon@2x.png" gap:platform="ios" width="144" height="144"/>
     
 	<icon src="icons/android/drawable-mdpi/ic_launcher.png" gap:platform="android" gap:density="ldpi" />
     <icon src="icons/android/drawable-mdpi/ic_launcher.png" gap:platform="android" gap:density="mdpi" />
@@ -89,7 +89,7 @@
     <icon src="icons/android/drawable-xhdpi/ic_launcher.png" gap:platform="android" gap:density="xhdpi" />
     <icon src="icons/android/drawable-xxhdpi/ic_launcher.png" gap:platform="android" gap:density="xxhdpi" />
 
-    <icon src="icons/brainmobile.png" />
+    <icon src="icons/ios/Icon.png" />
 	
     <!-- Define app icon for each platform. 
     <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:density="ldpi" />
