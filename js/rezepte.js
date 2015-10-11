@@ -41,7 +41,7 @@ function getRezepteList() {
 		});
 		alert("success");
 	})
-	.success(function() { alert("second success"); })
-	.error(function() { alert("error"); })
-	.complete(function() { alert("complete"); });;
+	.success(function() { $('#error').html("success"); })
+	.error(function() { $('#error').html("error") })
+	.complete(function() { $('#error').html("complete") });
 }
