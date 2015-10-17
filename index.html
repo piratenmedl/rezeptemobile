@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name=viewport content="user-scalable=no,width=device-width" />
   <link rel=stylesheet href="css/jquery.mobile-1.4.5.min.css" />
-  <!--<link rel=stylesheet href="css/start.css" />-->
-  <script src="js/jquery-2.0.3.min.js"></script>
+  <link rel=stylesheet href="css/start.css" />
+  <script src="js/jquery-1.11.1.min.js"></script>
   <script src="phonegap.js"></script>
   <script src="js/jquery.mobile-1.4.5.min.js"></script>
 <body> 
@@ -17,8 +17,20 @@
 
   <div data-role="main" class="ui-content">
   
-         <ul id="rezeptListe" data-role="listview" data-filter="true"></ul>
-         <div class="error"></div>
+         <form >
+            <input id="filter-for-listview" data-type="search" placeholder="Suchbegriff eingeben ...">
+         </form>
+         <ul id="rezeptListe" data-filter="true" data-filter-reveal="false" data-input="#filter-for-listview" data-role="listview" ></ul>
+         	<!--<li style="background-color:#ffffff;background-image:none" >
+         	<a href="rezept-details-bild.html?id=13"><img src="http://bealisa.com/rezepte/images/rezepte/13_img_small.jpg" class="ui-li-thumb" />
+			<h4>Rezept</h4>
+			<p>Kategorie - Unterkategorie</p>
+			<p><img src="icons/sterne/stern5schwarz.png" alt="wertung" width="55" height="10" style="padding-top:5px" ></p>
+			<span class="ui-li-aside"><img src="icons/sterne/stern5blau.png" alt="wertung" width="55" height="10"></span>
+			</a>
+            </li>-->
+         </ul>
+         <div id="error" style="margin-top:20px"></div>
   </div>
 
    <div data-role="footer" data-position="fixed">
