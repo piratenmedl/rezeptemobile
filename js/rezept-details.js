@@ -55,7 +55,9 @@ function displayRezept(data) {
 	if (rezept.schwierigkeit > 0) $('#actionListRezept').append('<li>Schwierigkeit<span class="ui-li-aside">'+schwierigkeit+'</span></li>');
 	if (rezept.portionen > 0) $('#actionListRezept').append('<li>Portionen<span class="ui-li-aside">' + portionen + '</span></li>');
 	if (rezept.kalorien > 0) $('#actionListRezept').append('<li>Kalorien pro Person<span class="ui-li-aside">' + kalorien + '</span></li>');
-	if (rezept.quelle > "") $('#actionListRezept').append('<li>Quelle<span class="ui-li-aside">' + quelle + '</span></li>');
+	if (rezept.quelle > "") { 
+		$('#actionListRezept').append('<li>Quelle<p>' + quelle + '</p></li>');
+	}
 	
 	$('#actionListRezept').listview('refresh');
 
@@ -79,7 +81,7 @@ function displayRezeptAnleitung(data) {
 	if (rezept.anweisung3) $('#actionListAnleitung').append('<li><h4>'+rezept.anweisung3+'</h4><p style="white-space: normal;">' + rezept.text3 + '</p></li>');
 	
 	if (zeit > "") { 
-		$('#actionListAnleitung').append('<li data-role="list-divider" ></li>');
+		$('#actionListAnleitung').append('<li data-role="list-divider" >&nbsp;</li>');
 		$('#actionListAnleitung').append('<li>Zubereitungszeit<span class="ui-li-aside">' + zeit + '</span></li>');
 	}
 
@@ -117,8 +119,8 @@ function displayRezeptZutaten(data) {
 			if (val.anzahl) anzahl = val.anzahl;  
 			if (val.zutat) zutat = val.zutat;  
 		
-			if ((zutat == "..." || zutat == "---") && i > 0 ) $('#actionListZutat').append('<li data-role="list-divider" ></li>');
-			if (zutat != "..." || zutat != "---" ) $('#actionListZutat').append('<li data-role="fieldcontain"><label class="ui-input-text" >'+anzahl+' '+einheit+'</label><h2 class="ui-li-heading">' + zutat + '</h2></li>');
+			if ((zutat == "..." || zutat == "---") && i > 0 ) $('#actionListZutat').append('<li data-role="list-divider" >&nbsp;</li>');
+			if (zutat != "..." || zutat != "---" ) $('#actionListZutat').append('<li><span class="einheit" >'+anzahl+' '+einheit+'</span><span><b>' + zutat + '</b></span></li>');
 //$('#tabelleZutaten tbody').append('<tr><td class="tabelleAnzahl" style="padding:2px 2px 2px 10px">'+anzahl+' '+einheit+'</td>'+
 			//'<td class="tabelleEinheit">'+einheit+'</td>'+
 			//'<td><b>'+zutat+'</b></td></tr>');

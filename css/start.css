@@ -1,4 +1,4 @@
-.ui-listview > li h3 { font-size: 1.1em; }
+.ui-listview > li h1 { font-size: 1.1em; }
 .ui-listview > li h3 { font-size: 0.9em; }
 
 .ui-listview .ui-li-has-thumb > .ui-btn > img:first-child, .ui-listview .ui-li-has-thumb .ui-li-thumb {
@@ -38,13 +38,48 @@ img.bildRezeptKlein {
 	text-align:right;
 }
 
-#tabelleZutaten td.tabelleAnzahl { }
 
 #actionListRezept .ui-li-aside, #actionListRezeptLinks .ui-li-aside, 
 #actionListRezeptRechts .ui-li-aside, #actionListAnleitung .ui-li-aside{ 
     width: 50%;
 }
 
-.tabelleAnzahl { width:45px; }
-.tabelleEinheit { width:60px; }
+#actionListZutat li span.einheit { display:inline-block; width: 30%; white-space:nowrap;padding-right:20px;}
+
+/* iPad Portrait */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2) { /* STYLES GO HERE */
+#actionListZutat span.einheit { display:inline-block; width: 30%; white-space:nowrap;padding-right:20px;}
+
+}
+
+/* iPad Landscape */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2) { /* STYLES GO HERE */
+#actionListZutat span.einheit { display:inline-block;  width: 20%; white-space:nowrap;padding-right:20px;}
+
+}
+
+/* iPhone Landscape */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) { /* STYLES GO HERE */
+#actionListZutat span.einheit { display:inline-block;  width: 30%; white-space:nowrap;padding-right:20px;}
+
+}
+
+/* iPhone Portrait */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) { /* STYLES GO HERE */ 
+#actionListZutat span.einheit { display:inline-block;  width: 40%; white-space:nowrap;padding-right:20px;}
+
+}
 

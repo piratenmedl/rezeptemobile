@@ -46,7 +46,7 @@ function getRezepteList() {
 	
 			$('#rezeptListe').append('<li style="background-color:#ffffff;background-image:none" ><a href="rezept-details-bild.html?id=' + val.nr_rez + '">' +
 					image +
-					'<h2>' + val.titel + '</h2>' +
+					'<h1>' + val.titel + '</h1>' +
 					'<h3>' + val.untertitel + '</h3>' +
 					'<p>' + val.kategorie + ukategorie + '</p>' + wertung +
 					'</a></li>');
